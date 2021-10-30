@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --black: #1c1c1c;
+  --base-color: #ff3838;
+  --base-color-light: #ff6666;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+body {
+  padding: 5%;
+  min-height: 100vh;
+  text-align: center;
+}
+
+img {
+  height: 10%;
+  width: 10%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+form {
+  max-width: 40rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background: var(--body-color);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  border-color: var(--black);
+  padding: 0.5rem;
+  margin: 0.7rem 0;
+  font-size: 1rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--black);
+}
+
+form textarea {
+  resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--base-color);
+  background: #ffe6e6;
+}
+
+form .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 2.5rem;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: var(--base-color);
+}
+
+form .btn:hover {
+  background: var(--base-color-light);
+}
